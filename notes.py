@@ -11,6 +11,11 @@ class Dog:
         s = f"{self.name} is {self.age} years old"
         return s
 
+    def play_fetch(self, num_fetch):
+        self.fetch_count += num_fetch
+
+    def reset_fetch(self):
+        self.fetch_count = 0
 # instances of the Dog class
 logan = Dog("logan", 8)
 cookie = Dog("cookie", 8)
